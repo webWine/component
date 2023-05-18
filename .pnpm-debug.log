@@ -1,0 +1,111 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/yangshuan/Desktop/2023/组件平台/component"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "component",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "pnpm -C component_test dev"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "typescript": "^5.0.4",
+        "vite": "^4.3.3"
+      }
+    },
+    "prefix": "/Users/yangshuan/Desktop/2023/组件平台/component"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/yangshuan/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/yangshuan/Desktop/2023/组件平台/component/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/typescript/5.0.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "^5.0.4"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite/4.3.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite",
+      "rawSpec": "^4.3.3"
+    }
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/5.0.4",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "found_in_store"
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/5.0.4",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "resolved"
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/4.3.3",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "found_in_store"
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/4.3.3",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/-/0.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "-",
+      "rawSpec": "latest"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/-/0.0.1",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/-/0.0.1",
+    "requester": "/Users/yangshuan/Desktop/2023/组件平台/component",
+    "status": "found_in_store"
+  },
+  "13 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "Dw is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/Dw"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "Dw",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "Dw",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/Dw: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/Dw: Not Found - 404\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:84419:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

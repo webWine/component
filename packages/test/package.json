@@ -1,0 +1,12 @@
+{
+  "name": "@component/test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "vue": "^3.2.47"
+  }
+}

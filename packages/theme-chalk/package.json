@@ -1,18 +1,16 @@
 {
-  "name": "@component",
+  "name": "@component/style",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "pnpm -F @component/test dev",
-    "build": ""
+    "build": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.3"
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0"
   }
 }
