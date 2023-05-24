@@ -5,10 +5,13 @@ import {
   guideMap
 } from './nameMap'
 
-
-function getFiles(folder, type, nameMap, flag?: boolean = false) {
+interface IComponentsMd{
+  text:string,
+  link:string
+}
+function getFiles(folder, type, nameMap, flag = false) {
   const filesName = fs.readdirSync(path.resolve(__dirname, "../../" + folder))
-  let componentsMd = []
+  let componentsMd:IComponentsMd[]= []
   filesName.forEach(item => {
     const name = item.split('.')[0]
 

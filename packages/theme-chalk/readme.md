@@ -10,3 +10,8 @@ vite以一个html文件为入口开始打包文件
 2、分组件打包
    ——公用样式打包合并
    ——单组件样式打包合并
+
+
+
+##  疑惑
+需要安装@esbuild-kit/cjs-loader完成gulp打包，否则将会出现gulp的module类型问题
