@@ -1,7 +1,9 @@
 import {series,parallel} from "gulp"
 
+const task ={
+    
+}
 
 
 
-
-exports.default = task
+export default task

@@ -1,49 +1,44 @@
 import fs from 'fs'
 import path from 'path'
-import nameMap from './nameMap'
+import {
+  componentMap,
+  guideMap
+} from './nameMap'
 
-// const fs = require("fs")
-// const path = require("path")
 
-function getFiles(folder,type){
-  const filesName = fs.readdirSync(path.resolve(__dirname,"../../"+folder))
+function getFiles(folder, type, nameMap, flag?: boolean = false) {
+  const filesName = fs.readdirSync(path.resolve(__dirname, "../../" + folder))
   let componentsMd = []
-  filesName.forEach(item=>{
-    const name =  item.split('.')[0]
-    
-    if(nameMap[type][name]){
-      componentsMd.push( {
-        text:name+"  "+ nameMap[type][name],
-        link:"/"+folder+'/'+name
+  filesName.forEach(item => {
+    const name = item.split('.')[0]
+
+    if (nameMap[type][name]) {
+      componentsMd.push({
+        text: !flag ? name + "  " + nameMap[type][name] : nameMap[type][name],
+        link: "/" + folder + '/' + name
       })
     }
   })
   return componentsMd
 }
+
+
+
 const sidebar = {
   '/guide/': [
     {
       text: '基础',
-      items: [
-        {
-          text: '安装',
-          link: '/guide/install',
-        },
-        {
-          text: '快速开始',
-          link: '/guide/start',
-        }
-      ],
+      items: getFiles('guide', 'base', guideMap, true)
     }
   ],
   '/components/': [
     {
       text: '基础组件',
-      items:getFiles('components','base'),
+      items: getFiles('components', 'base', componentMap),
     },
     {
-      text:"表单组件",
-      items:getFiles('components','form'),
+      text: "表单组件",
+      items: getFiles('components', 'form', componentMap),
     }
   ],
 }

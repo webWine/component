@@ -6,7 +6,8 @@
   "scripts": {
     "test": "pnpm -F @component/test dev",
     "build": "",
-    "docs:dev": "vitepress dev docs "
+    "docs:dev": "vitepress dev docs ",
+    "docs:build" :"vitepress build docs"
   },
   "keywords": [],
   "author": "",

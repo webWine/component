@@ -1,10 +1,19 @@
-const nameMap={
-    base:{
-        button:"按钮"
+const componentMap = {
+    base: {
+        button: "按钮"
     },
-    form:{
-        calendar:"日历"
+    form: {
+        calendar: "日历"
+    }
+}
+const guideMap = {
+    base:{
+        install:"安装",
+        start:"开始"
     }
 }
 
-export default nameMap
+export {
+    componentMap,
+    guideMap
+}
